@@ -1,0 +1,13 @@
+# Planning
+## Status
+- Layout + development stages
+
+## Inspiration
+- What are 2 problems I have in my life and what can I code to solve these problems to incorporate optimization?<br>
+
+## Focus
+- **Primary:** time management + skill development
+  - Goal setting
+- **Secondary:** UI/UX
+- **Tertiary:** career development, learning & development tracker, productivity, reminder system
+  - Habits and strategies to be more efficient
