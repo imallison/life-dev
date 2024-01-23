@@ -1,5 +1,10 @@
+# Planning
+## Status
+- Layout + development stages
+
 ## Inspiration
-- What are 2 problems I have in my life and what can I code to solve these problems to incorporate optimization?
+- What are 2 problems I have in my life and what can I code to solve these problems to incorporate optimization?<br>
+
 ## Focus
 - **Primary:** time management + skill development
   - Goal setting
