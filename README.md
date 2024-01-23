@@ -5,5 +5,5 @@
 - **Primary:** time management + skill development
   - Goal setting
 - **Secondary:** UI/UX
-- **Tertiary:** career development, learning & development tracker, productivity
+- **Tertiary:** career development, learning & development tracker, productivity, resource database
   - Habits and strategies to be more efficient
