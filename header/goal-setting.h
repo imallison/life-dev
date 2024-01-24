@@ -4,7 +4,7 @@ using namespace std;
 
 class GoalSetting {
     public:
-        string goals;
-    
+        std::vector<string> goals;
+        string goalStatus;
         string proficiency;
 };
