@@ -4,10 +4,13 @@ Hello! Welcome to Life Dev. Select an option:
 2. Create Account
     - Name
     - Username (5-10 characters): check if the username is already used
-    - Password (5-20 characters)
+    - Security Questions (1-2)
+        - Use questions instead of a password (5-20 characters)
+    - Account Type
 3. Login
     - Username: store all usernames
-    - Password: encrypt
-    - Recover username/password via security questions
+    - Security Questions (1-2)
+        - Password: encrypt
+        - Recover username/password via security questions
 
 # Dashboard
