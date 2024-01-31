@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-struct Skills {
+class Skills {
     public:
         std::vector<string> desiredSkills;
     
