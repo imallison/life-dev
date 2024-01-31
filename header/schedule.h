@@ -1,7 +1,7 @@
 #include <string>
 using namespace std;
 
-class Schedule {
+struct Schedule {
     public:
         int dayNum;
         double estimateTime;

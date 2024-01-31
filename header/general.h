@@ -1,7 +1,7 @@
 #include <string>
 using namespace std;
 
-class General {
+struct General {
     public:
         string username;
         string accountType; // Choice between study, career, and project
