@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-struct GoalSetting {
+class GoalSetting {
     public:
         std::vector<string> goals;
         string goalStatus;

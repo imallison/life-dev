@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-struct Projects {
+class Projects {
     public:
         std::vector<string> projects;
         string projectStatus;

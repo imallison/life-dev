@@ -1,6 +1,6 @@
 using namespace std;
 
-struct Calculations {
+class Calculations {
     private:
         double daysUntil;
         double completionPercentage;
