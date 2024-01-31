@@ -2,7 +2,13 @@
 #include <vector>
 using namespace std;
 
-struct GoalSetting {
+struct Skills {
     public:
         std::vector<string> desiredSkills;
+    
+    Skills();
+};
+
+Skills::Skills() {
+    desiredSkills = {""};
 };

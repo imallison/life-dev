@@ -7,4 +7,12 @@ struct GoalSetting {
         std::vector<string> goals;
         string goalStatus;
         string proficiency;
+    
+    GoalSetting();
+};
+
+GoalSetting::GoalSetting() {
+    goals = {""};
+    goalStatus = "";
+    proficiency = "";
 };
