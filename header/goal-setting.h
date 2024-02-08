@@ -4,6 +4,7 @@ using namespace std;
 
 class GoalSetting {
     public:
+        int goalCounter;
         std::vector<string> goals;
         string goalStatus;
         string proficiency;
@@ -12,6 +13,7 @@ class GoalSetting {
 };
 
 GoalSetting::GoalSetting() {
+    goalCounter = 0;
     goals = {""};
     goalStatus = "";
     proficiency = "";
