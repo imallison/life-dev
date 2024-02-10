@@ -1,13 +1,22 @@
 using namespace std;
 
 class Calculations {
-    private:
-        int daysUntil;
-        double completionPercentage;
-        double efficiencyCalc;
-        double efficiencyGoal;
-    
+public:
     Calculations();
+
+    void endDay();
+
+    void calcCompletionPercentage(int goalCounter, int totalGoals);
+    void calcEfficiency(double estimateTime);
+    void getEfficiencyCalc() const;
+    void setEfficiencyCalc(double goal);
+    
+
+private:
+    int daysUntil;
+    double completionPercentage;
+    double efficiencyCalc;
+    double efficiencyGoal;
 };
 
 Calculations::Calculations() {
