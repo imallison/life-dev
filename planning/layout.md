@@ -14,3 +14,6 @@ Hello! Welcome to Life Dev. Select an option:
         - Recover username/password via security questions
 
 # Dashboard
+
+# documentation.md
+This includes some of the issues I encountered + how I fixed them!
