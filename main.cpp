@@ -2,8 +2,8 @@
 #include <string>
 #include <vector>
 
-#include "general.h"
-#include "general.cpp"
+#include "general/general.h"
+#include "general/general.cpp"
 
 int main()
 {
