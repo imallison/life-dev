@@ -1,3 +1,6 @@
+#ifndef GENERAL_H
+#define GENERAL_H
+
 #include <string>
 #include <vector>
 using namespace std;
@@ -15,7 +18,7 @@ public:
     // Mutators
     void setUsername(const std::string &username);
     void setAccountType(const std::vector<std::string> &accountType);
-    void setFocus(cons t std::string &focus);
+    void setFocus(const std::string &focus);
 
     // Accessors
     std::string getUsername() const;
@@ -36,3 +39,4 @@ public:
     accountType = {""};
     focus = "";
 };*/
+#endif
