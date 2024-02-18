@@ -1,11 +1,28 @@
 # Life Dev
-Life Dev focuses on setting goals, improving study habits, planning out projects, and skill development.
+## Focus
+- **Primary:** time management + skill development
+  - Goal setting
+- **Secondary:** UX/UI
+- **Tertiary:** career development, learning & development tracker, productivity, reminder system
+  - Habits and strategies to be more efficient
 
-# Running life-dev
+## Functionality
+- Goal setting
+- Improving study habits
+- Plan out projects
+- Skill development
+- Tailors 
+
+## Inspiration
+- What are 2 problems I have in my life and what can I code to solve these problems to incorporate optimization?<br>
+
+## Issues
+- The preLaunchTask 'C/C++': g++.exe build active file terminated with exit code -1
+
+## Running life-dev + Setup
 - When running the files, ensure to keep them within their respective folders
-- Example: general.h should remain in the general folder
-- Reason: the file paths in main.cpp correspond with the folders that some of the files are in
+    - Example: general.h should remain in the general folder
+    - Reason: the file paths in main.cpp correspond with the folders that some of the files are in
 
-# layout.md
-- Includes my next steps for this project!
-- Lays out each folder/file and purpose
+## Technologies
+- **Languages:** C++
