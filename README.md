@@ -2,22 +2,22 @@
 ## Focus
 - **Primary:** time management + skill development
   - Goal setting
-- **Secondary:** UX/UI
-- **Tertiary:** career development, learning & development tracker, productivity, reminder system
+- **Secondary:** career development, learning and development tracker, productivity, reminder system
   - Habits and strategies to be more efficient
+- **Tertiary:** UX/UI
 
 ## Functionality
 - Goal setting
 - Improving study habits
 - Plan out projects
 - Skill development
-- Tailors 
 
 ## Inspiration
-- What are 2 problems I have in my life and what can I code to solve these problems to incorporate optimization?<br>
+- What are 2 problems I have in my life and what can I code to solve these problems to incorporate optimization?
 
 ## Issues
 - The preLaunchTask 'C/C++': g++.exe build active file terminated with exit code -1
+    - Fix: Ensure that the file paths are correct
 
 ## Running life-dev + Setup
 - When running the files, ensure to keep them within their respective folders
