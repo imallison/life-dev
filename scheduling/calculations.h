@@ -1,6 +1,10 @@
+#ifndef CALCULATIONS_H
+#define CALCULATIONS_H
+
 using namespace std;
 
-class Calculations {
+class Calculations
+{
 public:
     Calculations();
 
@@ -10,7 +14,6 @@ public:
     void calcEfficiency(double estimateTime);
     void getEfficiencyCalc() const;
     void setEfficiencyCalc(double goal);
-    
 
 private:
     int daysUntil;
@@ -19,9 +22,12 @@ private:
     double efficiencyGoal;
 };
 
-Calculations::Calculations() {
+Calculations::Calculations()
+{
     daysUntil = 0;
     completionPercentage = 0.0;
     efficiencyCalc = 0.0;
     efficiencyGoal = 0.0;
 };
+
+#endif

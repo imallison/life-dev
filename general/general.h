@@ -39,4 +39,5 @@ public:
     accountType = {""};
     focus = "";
 };*/
+
 #endif
