@@ -1,12 +1,33 @@
-#include <string>
-#include <vector>
-using namespace std;
+#include "goal_setting.h"
 
-class GoalSetting
+GoalSetting::GoalSetting() : status("Not Started"), proficiency("Beginner") {}
+
+void GoalSetting::addGoal(const std::string &goal)
 {
-public:
-    int goalCounter;
-    std::vector<string> goals;
-    string goalStatus;
-    string proficiency;
-};
+    goals.push_back(goal);
+}
+
+void GoalSetting::updateGoalStatus(const std::string &status)
+{
+    this->status = status;
+}
+
+void GoalSetting::setProficiency(const std::string &proficiency)
+{
+    this->proficiency = proficiency;
+}
+
+std::vector<std::string> GoalSetting::getGoals() const
+{
+    return goals; // Updates
+}
+
+std::string GoalSetting::getGoalStatus() const
+{
+    return status; // Updates
+}
+
+std::string GoalSetting::getProficiency() const
+{
+    return proficiency;
+}
