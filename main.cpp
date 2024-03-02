@@ -20,81 +20,83 @@ using namespace std;
 
 int main()
 {
-    General userGeneralInfo;
-    Schedule userSchedule;
-    GoalSetting userGoals;
-    Skills userSkills;
-    Projects userProjects;
     Calculations userCalculations;
+    General userGeneralInfo;
+    GoalSetting userGoals;
+    Projects userProjects;
+    Schedule userSchedule;
+    Skills userSkills;
+
     cout << "Welcome to the Development Tracker!" << endl;
 
+    string username, focus;
     cout << "Enter your username: ";
-    string username;
-    cin >> username;
+    getline(cin, username);
+    userGeneralInfo.setUsername(username);
 
-    cout << "Enter your focus area (single word, e.g., Math): ";
-    string focus;
-    cin >> focus;
+    cout << "Enter your focus area (e.g., Software Development, Data Science): ";
+    getline(cin, focus);
     userGeneralInfo.setFocus(focus);
 
-    int choice = 0;
     while (true)
     {
         cout << "\nWhat would you like to do today? (Enter number)" << endl;
-        cout << "1. Add a goal\n2. Add a skill\n3. Add a project\n4. End the day\n5. Exit" << endl;
-        if (cin >> choice) // Ensures input is a number
-        {
-            string input;
+        cout << "1. Add a goal\n2. Add a skill\n3. Add a project\n4. List goals\n5. List skills\n6. List projects\n7. End the day\n8. Exit" << endl;
 
-            switch (choice)
-            {
-            case 1:
-            {
-                cout << "Enter a goal: ";
-                string goal;
-                getline(cin, goal);
-                userGoals.addGoal(goal);
-                break;
-            }
-            case 2:
-            {
-                cout << "Enter a skill: ";
-                string skill;
-                getline(cin, skill);
-                userSkills.addSkill(skill);
-                break;
-            }
-            case 3:
-            {
-                cout << "Enter a project: ";
-                string project;
-                getline(cin, project);
-                userProjects.addProject(project);
-                break;
-            }
-            case 4:
-                userSchedule.endDay();
-                cout << "The day has ended. Time for a fresh start tomorrow!" << endl;
-                break;
-            case 5:
-                cout << "Exiting. Goodbye!" << endl;
-                return 0;
-            default:
-                cout << "Invalid option, try again." << endl;
-                break;
-            }
+        int choice = 0;
+        cin >> choice;
+
+        if (choice == 1)
+        {
+            cout << "Enter a goal (single word): ";
+            string goal;
+            cin >> goal;
+            userGoals.addGoal(goal);
+        }
+        else if (choice == 2)
+        {
+            cout << "Enter a skill (single word): ";
+            string skill;
+            cin >> skill;
+            userSkills.addSkill(skill);
+        }
+        else if (choice == 3)
+        {
+            cout << "Enter a project (single word): ";
+            string project;
+            cin >> project;
+            userProjects.addProject(project);
+        }
+        else if (choice == 5)
+        {
+            cout << "Skills:\n";
+            userSkills.listSkills();
+        }
+        else if (choice == 7)
+        {
+            cout << "The day has ended.\n";
+        }
+        else if (choice == 8)
+        {
+            cout << "Exiting. Goodbye!\n";
+            break; // Exit the loop
+        }
+        else
+        {
+            cout << "Invalid input.\n";
         }
     }
-    // // Test
-    // General test1;
-    // cout << "Default: " << test1.getUsername() << ", Focus: " << test1.getFocus() << endl;
-
-    // vector<string> accountTypes = {"study", "career"};
-    // General test2("testuser1", accountTypes, "Math");
-    // cout << "Overloaded: " << test2.getUsername() << ", Focus: " << test2.getFocus() << endl;
-
-    // test1.shareFocus(test2);
-    // cout << "Shared. Test 1's Focus: " << test1.getFocus() << ", test 2's Focus: " << test2.getFocus() << endl;
 
     return 0;
 }
+
+// // Test
+// General test1;
+// cout << "Default: " << test1.getUsername() << ", Focus: " << test1.getFocus() << endl;
+
+// vector<string> accountTypes = {"study", "career"};
+// General test2("testuser1", accountTypes, "Math");
+// cout << "Overloaded: " << test2.getUsername() << ", Focus: " << test2.getFocus() << endl;
+
+// test1.shareFocus(test2);
+// cout << "Shared. Test 1's Focus: " << test1.getFocus() << ", test 2's Focus: " << test2.getFocus() << endl;
