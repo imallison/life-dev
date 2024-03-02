@@ -18,7 +18,8 @@
 ## Issues
 - The preLaunchTask 'C/C++': g++.exe build active file terminated with exit code -1
     - Fix: Ensure that the file paths are correct
-
+    - Run: ./life-dev.exe (in Git Bash) or g++ -o life-dev .
+    
 ## Running life-dev + Setup
 - When running the files, ensure to keep them within their respective folders
     - Example: general.h should remain in the general folder
